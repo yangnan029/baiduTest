@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    zoom: 1;
+    &::after {
+        content: '';
+        clear: both;
+        height: 0;
+        display: block;
+    }
+}
+
+body {
+    min-width: 600px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.top_tit {
+    text-align: right;
+    margin-right: 20px;
+    padding: 20px 0;
+    a {
+        color: #666;
+        margin-left: 15px;
+        font-weight: 700;
+        &.active{
+            color: red;
+        }
+    }
+}
+
+.body_Search {
+    text-align: center;
+    .body_img {
+        img {
+            width: 270px;
+            height: 190px;
+        }
+    }
+    .body_input {
+        .body_input_show {
+            position: relative;
+            display: inline-block;
+            input[type="text"] {
+                width: 538px;
+                height: 34px;
+            }
+            span {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                display: inline-block;
+                width: 18px;
+                height: 16px;
+                background: url('https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/soutu/img/camera_new_5606e8f.png') no-repeat;
+            }
+        }
+        input[type="button"] {
+            width: 100px;
+            height: 36px;
+            background: #3385ff;
+            color: #fff;
+            border:none;
+        }
+    }
+}
+
+.mobile_code {
+    text-align: center;
+    margin-top: 190px;
+    .code_img {
+        img {}
+    }
+    .code_p {
+        color: #666;
+        font-weight: 700;
+    }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 25px;
+    position: relative;
+    p {
+        color: #666;
+        padding: 3px 0;
+        a {
+            color: #666;
+            margin-left: 20px;
+        }
+        i {
+            position: absolute;
+            bottom: 2px;
+            display: inline-block;
+            width: 14px;
+            height: 17px;
+            background: url('https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5859e57.png') -600px -96px no-repeat;
+        }
+    }
+}
+
+#login {
+    width: 100%;
+    min-width: 600px;
+    height: 100%;
+    min-height: 800px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.15;
+    z-index: 1; 
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.login_show {
+    width: 393px;
+    height: 448px;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    margin-left: -196px;
+    margin-top: -224px;
+    background: #fff;
+    z-index: 2;
+    .login_tit {
+        position: relative;
+        background: #f7f7f7;
+        margin-bottom: 15px;
+        h3 {
+            height: 18px;
+            line-height: 18px;
+            padding: 15px 35px 13px;
+            background: url('https://passport.baidu.com/passApi/img/baidu_logo_24.png') no-repeat;
+            background-position: 5px center;
+            font-size: 16px;
+            color: #666;
+        }
+        .del {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: 10px;
+            top: 16px;
+            background: url('https://passport.baidu.com/passApi/img/pass_login_icons.png') no-repeat;
+        }
+    }
+    .mobile_login_quick {
+        text-align: right;
+        margin-right: 20px;
+        a {
+            text-decoration: none;
+            color: #666;
+            padding-left: 15px;
+            background: url('https://passport.baidu.com/passApi/img/smsSwitchPhone.png') no-repeat;
+            background-position: 0px 1px;
+        }
+    }
+    .user_name {
+        padding: 12px 10px;
+        margin: 15px 20px;
+        border: 1px solid #ddd;
+        input[type="text"] {
+            width: 300px;
+            padding-left: 30px;
+            background: url('https://passport.baidu.com/passApi/img/input_icons_24.png')no-repeat;
+            background-position: 0px -113px;
+            outline: none;
+            border: none;
+        }
+    }
+    .password {
+        padding: 12px 10px;
+        margin: 15px 20px;
+        border: 1px solid #ddd;
+        input[type="text"] {
+            width: 300px;
+            padding-left: 30px;
+            background: url('https://passport.baidu.com/passApi/img/input_icons_24.png')no-repeat;
+            background-position: 0px -151px;
+            outline: none;
+            border: none;
+        }
+    }
+    .login_problem {
+        position: relative;
+        margin-left: 20px;
+        .zidong_login {
+            height: 13px;
+            line-height: 13px;
+            margin-bottom: 15px;
+            input[type="checkbox"] {
+                vertical-align: middle;
+            }
+            p {
+                display: inline-block;
+                color: #666;
+            }
+        }
+        .problem {
+            position: absolute;
+            right: 20px;
+            top: 0;
+            a {
+                color: #2e7fdb;
+                text-decoration: none;
+            }
+        }
+    }
+    .login_btn{
+        text-align: center;
+        margin-bottom: 15px;
+        input[type="button"]{
+            width: 350px;
+            height: 48px;
+            background: #3f89ec;
+            border-radius: 3px;
+            border: none;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+    .zhuce{
+        text-align: right;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        a{
+            text-decoration: none;
+            color: #2e7fdb;
+        }
+    }
+    .more_login{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        border-top: 1px solid #eee;
+        .qq_weibo{
+            padding-top: 16px;
+            i{
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                background: url('https://passport.baidu.com/passApi/img/pass_login_icons.png') no-repeat;
+                background-position: -90px 0;
+                margin-right: 16px;
+    
+            }
+        }
+
+    }
+    .login_code{
+        width: 44px;
+        height: 44px;
+        background: url('https://passport.baidu.com/passApi/img/pass_login_icons.png') no-repeat;
+        background-position: -45px -85px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
